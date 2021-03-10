@@ -11,12 +11,14 @@
 
 <body>
     <table id="datakar" border="1">
-        <tr>
-            <td>id</td>
-            <td>employee_name</td>
-            <td>employee_age</td>
-            <td>employee_salary</td>
-            <td>image</td>
+        <tr style="
+    background-color: cornflowerblue;
+">
+            <td>ID Pegawai</td>
+            <td>Nama Pegawai</td>
+            <td>Usia</td>
+            <td>Gaji Pegawai</td>
+            <td>Foto</td>
         </tr>
     </table>
     <button id="refresh">refresh</button>
@@ -47,7 +49,7 @@
                 req: data,
                 count: data.length
             }).then(result => {
-                console.log(result)
+                alert("Data Saved!")
             }).catch(error => {
                 console.log(error)
             });
